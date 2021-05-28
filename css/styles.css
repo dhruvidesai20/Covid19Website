@@ -1,0 +1,261 @@
+body {
+font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sec {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.homeSec, .section3, .section5, .section7 {
+  background: #f5c0b0;
+  z-index: -1;
+  color: #ffff;
+}
+
+.section2, .section4, .section6{
+  background: #feede6;
+  z-index: -1;
+  color: #1b2021;
+}
+
+/* Home Section */
+
+.homeSec {
+  padding: 4% 8%;
+}
+
+.bigHeading {
+  font-size: 8.5rem;
+  color: #ffff;
+  width: 56%;
+  z-index: 1;
+}
+
+.bg-img {
+  position: absolute;
+  width: 60%;
+  right: 0;
+  bottom: 0;
+  background: url("../images/bgImg.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Section 2 */
+
+.section2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec2-text {
+  position: absolute;
+  font-size: 4rem;
+  color: #1b2021;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+strong {
+  color: #1d89aa;
+}
+
+.sec2-text:nth-child(1) {
+  top: 6%
+}
+
+.sec2-text:nth-child(2) {
+  bottom: 4%
+}
+
+
+.boyFace {
+  width: 340px;
+}
+
+.mask {
+  position: absolute;
+  display: none;
+}
+
+.mask-img {
+  height: 160px;
+}
+
+/* .section 3, 4, 5, 6 and 7  */
+
+.content{
+  width: 85%;
+  margin: auto;
+  padding: 3%;
+}
+
+.secImg {
+  position: absolute;
+  bottom: 0;
+  width: 55%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.secHeading{
+  font-size: 7rem;
+  text-align: center;
+  margin: 2%;
+}
+
+.secTxt{
+  font-size: 2.2rem;
+  margin-right: 5%;
+}
+
+.secList li {
+  font-size: 2rem;
+  color: #ffff;
+}
+
+.section3 .secImg{
+  width: 70%;
+}
+
+.section4 .secImg{
+  width: 50%;
+}
+
+.section6 .secTxt{
+  text-align: justify;
+}
+
+.section4 .secList li, .section6 .secList li{
+  color: #1b2021;
+}
+
+
+@media (max-width: 1366px) {
+  .secImg {
+    width: 45%;
+  }
+
+  .section3 .secImg{
+    width: 60%;
+  }
+
+  .section4 .secImg{
+    width: 40%;
+  }
+
+  .secHeading{
+    font-size: 4.5rem;
+  }
+
+  .secTxt{
+    font-size: 2rem;
+  }
+
+  .secList li{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1025px) {
+  .bigHeading {
+    font-size: 6.5rem;
+    width: 60%;
+  }
+
+  .sec2-text {
+    font-size: 2.5rem;
+  }
+
+  .sec2-text:nth-child(1) {
+    top: 8%
+  }
+
+  .sec2-text:nth-child(2) {
+    bottom: 8%
+  }
+
+  .boyFace {
+    width: 300px;
+  }
+
+  .mask-img {
+    height: 130px;
+  }
+
+  .section3 .secImg {
+    width: 70%;
+  }
+
+  .section5 .secImg, .section6 .secImg{
+    width: 50%;
+  }
+
+  .secHeading{
+    font-size: 3.5rem;
+  }
+
+  .secTxt{
+    font-size: 1.7rem;
+  }
+
+  .secList li{
+    font-size: 1.4rem;
+  }
+
+}
+
+@media (max-width: 426px) {
+  .homeSec {
+    text-align: center;
+    padding: 4% 8%;
+  }
+
+  .bg-img {
+    width: 100%;
+  }
+
+  .bigHeading {
+    font-size: 4.2rem;
+    width: 100%;
+  }
+
+  .boyFace {
+    width: 200px;
+  }
+
+  .mask-img {
+    height: 100px;
+  }
+
+  .sec2-text {
+    font-size: 1.9rem;
+  }
+
+  .sec .secImg {
+    width: 100%;
+  }
+
+  .content{
+    width: 90%;
+  }
+
+  .secHeading{
+    font-size: 2.4rem;
+  }
+
+  .secTxt{
+    font-size: 1.3rem;
+  }
+
+  .secList li{
+    font-size: 1rem;
+  }
+}
