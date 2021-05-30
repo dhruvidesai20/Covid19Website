@@ -370,11 +370,10 @@ strong {
 
   .bg-img {
     width: 100%;
-    position: relative;
   }
 
   .bigHeading {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     width: 100%;
   }
 
@@ -391,17 +390,12 @@ strong {
   }
 
   .sec {
-    height: 100%;
-    text-align: center;
-  }
-  
-  .section2 {
     height: 100vh;
+    text-align: center;
   }
 
   .sec .secImg {
     width: 100%;
-    position: static;
   }
 
   .content {
@@ -424,21 +418,39 @@ strong {
     margin-left: 0;
   }
 
+  .section3 .secTxt{
+    text-align: left;
+  }
+
   .bubble {
-    height: 180px;
-    width: 180px;
+    height: 140px;
+    width: 140px;
     margin-bottom: 5%;
-    font-size: 1.1rem;
-    position: static;
+    font-size: 0.8rem;
     opacity: 1;
     transform: translateY(0);
   }
 
-  .col-sm-6 {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  .bubble1{
+    top: 10%;
+  }
+
+  .bubble2{
+    top: -110%;
+    right: -48%;
+  }
+
+  .bubble3{
+    top: -90%;
+  }
+
+  .bubble4{
+    top: -210%;
+    right: -48%;
+  }
+
+  .section4 {
+    height: 100%;
   }
 
   .sec4-content {
@@ -456,12 +468,26 @@ strong {
     width: 40%;
   }
 
+  .section5 .secHeading{
+    font-size: 2.1rem
+  }
+
+  .section5 .secTxt{
+    font-size: 1.2rem
+  }
+
   .sec5Img {
     float: none;
-    width: 100%;
+    width: 65%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
   }
 
   .section5 p {
-    font-size: 1.3rem;
+    line-height: 0.9;
+    font-size: 1rem;
   }
 }
