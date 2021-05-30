@@ -18,8 +18,8 @@
 
   var controller= new ScrollMagic.Controller();
 
-  var timeline= new TimelineMax();
-  timeline
+  var timeline1= new TimelineMax();
+  timeline1
   .from(".mask", 4, {
     y: 450,
     ease: Power1.easeInOut
@@ -34,17 +34,88 @@
     duration: "100%",
     triggerHook: 0,
   })
-  .setTween(timeline)
+  .setTween(timeline1)
   .setPin("#trigger")
   .addTo(controller)
 
-  var section= document.querySelectorAll(".sec");
-  for (var i = 3; i <= section.length; i++) {
-  var scene2= new ScrollMagic.Scene({
-      triggerElement: ".section" + i ,
-      duration: "100%",
-      triggerHook: 0,
-    })
-      .setPin(".section" + i, {pushfollowers: true})
+  function scroll(){
+    if($(window).width()> 426){
+      var timeline2= new TimelineMax();
+      timeline2
+        .to(".bubble1", 4, {
+          opacity:1,
+          transform: "translateY(0)"
+        })
+        .to(".bubble2", 4, {
+          opacity:1,
+          transform: "translateY(0)"
+        }, "-=3")
+        .to(".bubble3", 4, {
+          opacity:1,
+          transform: "translateY(0)"
+        }, "-=2")
+        .to(".bubble4", 4, {
+          opacity:1,
+          transform: "translateY(0)"
+        }, "-=1")
+      var scene2= new ScrollMagic.Scene({
+        triggerElement: ".section3",
+        duration: "100%",
+        triggerHook: 0
+      })
+      .setTween(timeline2)
+      .setPin(".section3")
       .addTo(controller)
+
+      var timeline3= new TimelineMax();
+      timeline3
+      .to(".sec405", 5, {
+        transform: "translateX(0)"
+      })
+      .to(".sec404", 5, {
+        opacity:1,
+        transform: "translateX(0)"
+      }, "-=4")
+      .to(".sec403", 5, {
+        opacity:1,
+        transform: "translateX(0)"
+      }, "-=3")
+      .to(".sec402", 5, {
+        opacity:1,
+        transform: "translateX(0)"
+      }, "-=2")
+      .to(".sec401", 5, {
+        opacity:1,
+        transform: "translateX(0)"
+      }, "-=1")
+
+        var scene3= new ScrollMagic.Scene({
+          triggerElement: ".section4",
+          duration: "100%",
+          triggerHook: 0
+        })
+        .setTween(timeline3)
+        .setPin(".section4")
+        .addTo(controller)
+
+        var scene4= new ScrollMagic.Scene({
+          triggerElement: ".section5",
+          duration: "30%",
+          triggerHook: 0
+        })
+
+        .setPin(".section5")
+        .addTo(controller)
+
+        var scene5= new ScrollMagic.Scene({
+          triggerElement: ".section6",
+          duration: "30%",
+          triggerHook: 0
+        })
+
+        .setPin(".section6")
+        .addTo(controller)
     }
+  }
+
+    $(window).on('load', scroll );
