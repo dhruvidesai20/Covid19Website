@@ -378,10 +378,6 @@ strong {
     width: 100%;
   }
 
-  .section2 {
-    height: 100vh;
-  }
-
   .boyFace {
     width: 200px;
   }
@@ -397,6 +393,10 @@ strong {
   .sec {
     height: 100%;
     text-align: center;
+  }
+  
+  .section2 {
+    height: 100vh;
   }
 
   .sec .secImg {
