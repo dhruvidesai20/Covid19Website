@@ -491,3 +491,55 @@ strong {
     font-size: 1rem;
   }
 }
+
+@media (max-width: 362px) {
+    .section3 .secHeading, .section6 .secHeading {
+      padding: 2%;
+      font-size: 2.5rem;
+    }
+
+    .bubble {
+      width: 170px;
+      height: 170px;
+      font-size: 1rem;
+    }
+
+    .bubble1 {
+      top: 10%;
+      left: -10%;
+    }
+
+    .bubble3 {
+      top: -90%;
+      left: -10%;
+    }
+
+    .section5 .secHeading {
+      font-size: 2.2rem
+    }
+
+    .section5 .secTxt {
+      font-size: 1.2rem
+    }
+
+    .sec5Img {
+      float: none;
+      width: 85%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    .section5 p {
+      font-size: 1.1rem;
+      line-height: 1.1;
+    }
+
+    .section6 .secTxt {
+      padding: 10% 2% 8%;
+      line-height: 1.5;
+    }
+  }
+
