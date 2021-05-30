@@ -200,6 +200,7 @@ strong {
 /* Section7 */
 .section7 {
   background: #fbdfbc;
+  z-index: -1;
 }
 
 .section7 .secImg {
